@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MQExamAppCrossPlatform.Page1">
+    <ContentPage.Content>
+        <StackLayout Padding="5,20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="This is a test project"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                />
+                <Image Source="icon.png" />
+            </StackLayout>
+           
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Enter First Number: "
+                       VerticalOptions="End"/>
+                <Entry x:Name ="EditText1" 
+                       VerticalOptions="End"
+                        WidthRequest="100"
+                        />
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Enter Second Number: "
+                       VerticalOptions="End"/>
+                <Entry x:Name="EditText2" 
+                       VerticalOptions="End" 
+                       WidthRequest="100"/>
+            </StackLayout>
+
+            <BoxView x:Name="justASpacer"
+                 HeightRequest="2" />
+
+            <StackLayout Orientation="Horizontal">
+                <Button
+                      Clicked="Button_Clicked"
+                      HorizontalOptions="Start"
+                      VerticalOptions="Start"
+                      BackgroundColor="Snow"
+                        ImageSource="enter.png"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label x:Name="lblError1" Text="First Number is not a number"
+                       IsVisible="false"/>
+                <Label x:Name="lblError2" Text="Second Number is not a number"
+                       IsVisible="false"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
