@@ -1,4 +1,4 @@
-# XmarinExamApp
+# XamarinExamApp
 First Xamarin Interview Exam App
 
 I was required to do the following:
